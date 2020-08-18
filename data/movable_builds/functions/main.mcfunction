@@ -1,0 +1,1 @@
+execute as @a[scores={mb_use_item=1..}] at @s run function movable_builds:use_item

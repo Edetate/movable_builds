@@ -12,3 +12,5 @@ execute if block ~ ~ ~ #movable_builds:other_facing run function movable_builds:
 scoreboard players operation @s mb_parent_id = $parent_id mb_part_id
 scoreboard players operation @s mb_build_side = $coming_from_side mb_build_side
 scoreboard players operation @s mb_layer = $current_layer mb_layer
+
+execute if entity @e[type=armor_stand, tag=edta_movable_build, tag=edta_mb_marker, distance=..0.5] run function movable_builds:scan/mark_hinge

@@ -21,3 +21,8 @@ scoreboard players set $MAX_NUMBER_OF_BLOCKS_SCANNED scan_limit 500
 
 #maxCommandChainLength should be at least $MAX_NUMBER_OF_BLOCKS_SCANNED * 50
 gamerule maxCommandChainLength 70000
+
+team add edta_mb_hinges
+team modify edta_mb_hinges color blue
+team add edta_mb_ignores
+team modify edta_mb_ignores color red

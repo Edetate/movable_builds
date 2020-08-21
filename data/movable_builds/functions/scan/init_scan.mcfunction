@@ -6,7 +6,7 @@ scoreboard players operation $current_id mb_build_id = $id_pool mb_build_id
 scoreboard players reset $parent_id mb_part_id
 scoreboard players set $current_layer mb_layer 0
 
-summon minecraft:armor_stand ~ ~ ~ {Marker:1b,NoGravity:1,Invulnerable:1b,Tags:[edta_movable_build,center,next_to_scan],Invisible:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.01f,0.01f,0.01f]},DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,NoGravity:1,Invulnerable:1b,Tags:[edta_movable_build,edta_mb_part,center,next_to_scan],Invisible:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.01f,0.01f,0.01f]},DisabledSlots:2039583}
 execute as @e[type=armor_stand,tag=edta_movable_build,tag=center,tag=!idgiven,limit=1] at @s run function movable_builds:scan/set_properties
 function movable_builds:scan/scan_manager
 

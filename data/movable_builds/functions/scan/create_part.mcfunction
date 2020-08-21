@@ -1,2 +1,2 @@
-summon minecraft:armor_stand ~ ~ ~ {Marker:1b,NoGravity:1,Invulnerable:1b,Tags:[edta_movable_build],Invisible:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.01f,0.01f,0.01f]},DisabledSlots:2039583}
-execute as @e[type=armor_stand,tag=edta_movable_build,tag=!idgiven,tag=!edta_mb_marker,limit=1] at @s run function movable_builds:scan/set_properties
+execute unless entity @e[type=armor_stand, tag=edta_movable_build, tag=edta_mb_ignore, distance=..0.5] run function movable_builds:scan/do_create_part
+kill @e[type=armor_stand, tag=edta_movable_build, tag=edta_mb_ignore, distance=..0.5,limit=1]

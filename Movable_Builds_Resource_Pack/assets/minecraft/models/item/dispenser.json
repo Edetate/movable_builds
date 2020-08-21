@@ -1,0 +1,36 @@
+{
+  "parent": "block/dispenser",
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 5420101
+      },
+      "model": "custom/east/dispenser"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5420102
+      },
+      "model": "custom/north/dispenser"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5420103
+      },
+      "model": "custom/west/dispenser"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5420104
+      },
+      "model": "custom/up/dispenser"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5420105
+      },
+      "model": "custom/down/dispenser"
+    }
+  ]
+
+}

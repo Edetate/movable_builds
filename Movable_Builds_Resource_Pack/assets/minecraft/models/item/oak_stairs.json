@@ -1,0 +1,12 @@
+{
+    "parent": "block/oak_stairs",
+    "overrides": [
+	{ "predicate": { "custom_model_data": 5420101}, "model": "custom/east/oak_stairs"},
+	{ "predicate": { "custom_model_data": 5420102}, "model": "custom/south/oak_stairs"},
+	{ "predicate": { "custom_model_data": 5420103}, "model": "custom/west/oak_stairs"},
+	{ "predicate": { "custom_model_data": 5420104}, "model": "custom/northup/oak_stairs"},
+    { "predicate": { "custom_model_data": 5420105}, "model": "custom/eastup/oak_stairs"},
+    { "predicate": { "custom_model_data": 5420106}, "model": "custom/southup/oak_stairs"},
+    { "predicate": { "custom_model_data": 5420107}, "model": "custom/westup/oak_stairs"}
+	]
+}

@@ -1,0 +1,3 @@
+{
+    "parent": "block/polished_diorite_slab",   "overrides": [     {       "predicate": {         "custom_model_data": 5420101       },       "model": "block/polished_diorite_slab_top"     },     {       "predicate": {         "custom_model_data": 5420102       },       "model": "block/polished_diorite"     }   ]
+}

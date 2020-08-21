@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "minecraft:item/glistering_melon_slice"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 5420101
+            },
+            "model": "custom/red_outline"
+        },
+      {
+        "predicate": {
+          "custom_model_data": 5420102
+        },
+        "model": "custom/blue_outline"
+      }
+    ]
+
+}

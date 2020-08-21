@@ -1,0 +1,4 @@
+{
+    "parent": "block/smooth_quartz_stairs",
+     "overrides": [
+ 	{ "predicate": { "custom_model_data": 5420101}, "model": "custom/east/smooth_quartz_stairs"}, 	{ "predicate": { "custom_model_data": 5420102}, "model": "custom/south/smooth_quartz_stairs"}, 	{ "predicate": { "custom_model_data": 5420103}, "model": "custom/west/smooth_quartz_stairs"}, 	{ "predicate": { "custom_model_data": 5420104}, "model": "custom/northup/smooth_quartz_stairs"},     { "predicate": { "custom_model_data": 5420105}, "model": "custom/eastup/smooth_quartz_stairs"},     { "predicate": { "custom_model_data": 5420106}, "model": "custom/southup/smooth_quartz_stairs"},     { "predicate": { "custom_model_data": 5420107}, "model": "custom/westup/smooth_quartz_stairs"} 	]}

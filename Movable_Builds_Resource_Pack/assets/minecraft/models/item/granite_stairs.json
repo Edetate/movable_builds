@@ -1,0 +1,47 @@
+{
+  "parent": "block/granite_stairs",
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 5420101
+      },
+      "model": "custom/east/granite_stairs"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5420102
+      },
+      "model": "custom/south/granite_stairs"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5420103
+      },
+      "model": "custom/west/granite_stairs"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5420104
+      },
+      "model": "custom/northup/granite_stairs"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5420105
+      },
+      "model": "custom/eastup/granite_stairs"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5420106
+      },
+      "model": "custom/southup/granite_stairs"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5420107
+      },
+      "model": "custom/westup/granite_stairs"
+    }
+  ]
+}

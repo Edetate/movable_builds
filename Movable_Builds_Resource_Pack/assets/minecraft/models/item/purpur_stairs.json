@@ -1,0 +1,4 @@
+{
+    "parent": "block/purpur_stairs",
+     "overrides": [
+ 	{ "predicate": { "custom_model_data": 5420101}, "model": "custom/east/purpur_stairs"}, 	{ "predicate": { "custom_model_data": 5420102}, "model": "custom/south/purpur_stairs"}, 	{ "predicate": { "custom_model_data": 5420103}, "model": "custom/west/purpur_stairs"}, 	{ "predicate": { "custom_model_data": 5420104}, "model": "custom/northup/purpur_stairs"},     { "predicate": { "custom_model_data": 5420105}, "model": "custom/eastup/purpur_stairs"},     { "predicate": { "custom_model_data": 5420106}, "model": "custom/southup/purpur_stairs"},     { "predicate": { "custom_model_data": 5420107}, "model": "custom/westup/purpur_stairs"} 	]}

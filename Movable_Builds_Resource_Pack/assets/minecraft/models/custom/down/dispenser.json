@@ -1,0 +1,11 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "block/furnace_top",
+        "front": "block/dispenser_front",
+        "side": "block/furnace_top"
+    }, "display": {
+    "head": {
+        "rotation": [ -90, 0, 0 ]
+    }}
+}

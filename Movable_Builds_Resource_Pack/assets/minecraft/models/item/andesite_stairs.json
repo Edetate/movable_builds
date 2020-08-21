@@ -1,0 +1,4 @@
+{
+    "parent": "block/andesite_stairs",
+     "overrides": [
+ 	{ "predicate": { "custom_model_data": 5420101}, "model": "custom/east/andesite_stairs"}, 	{ "predicate": { "custom_model_data": 5420102}, "model": "custom/south/andesite_stairs"}, 	{ "predicate": { "custom_model_data": 5420103}, "model": "custom/west/andesite_stairs"}, 	{ "predicate": { "custom_model_data": 5420104}, "model": "custom/northup/andesite_stairs"},     { "predicate": { "custom_model_data": 5420105}, "model": "custom/eastup/andesite_stairs"},     { "predicate": { "custom_model_data": 5420106}, "model": "custom/southup/andesite_stairs"},     { "predicate": { "custom_model_data": 5420107}, "model": "custom/westup/andesite_stairs"} 	]}

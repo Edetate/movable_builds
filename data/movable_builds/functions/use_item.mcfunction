@@ -5,3 +5,4 @@ execute if score @s mb_use_type matches 1 anchored eyes run function movable_bui
 execute if score @s mb_use_type matches 2 anchored eyes run function movable_builds:move/move_where_looking
 execute if score @s mb_use_type matches 3 anchored eyes run function movable_builds:tools/mark
 execute if score @s mb_use_type matches 4 anchored eyes run function movable_builds:tools/ignore
+execute if score @s mb_use_type matches 5 anchored feet run function movable_builds:tools/info

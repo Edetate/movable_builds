@@ -26,3 +26,5 @@ team add edta_mb_hinges
 team modify edta_mb_hinges color blue
 team add edta_mb_ignores
 team modify edta_mb_ignores color red
+team add edta_mb_center
+team modify edta_mb_center color green

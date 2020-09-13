@@ -2,6 +2,7 @@ scoreboard objectives add mb_part_id dummy
 scoreboard objectives add mb_parent_id dummy
 scoreboard objectives add mb_build_side dummy
 scoreboard objectives add mb_build_id dummy
+scoreboard objectives add edta_mb_ppl_id dummy
 scoreboard objectives add mb_previous_id dummy
 scoreboard objectives add mb_prev_layer dummy
 scoreboard objectives add mb_boolean dummy
@@ -28,3 +29,5 @@ team add edta_mb_ignores
 team modify edta_mb_ignores color red
 team add edta_mb_center
 team modify edta_mb_center color green
+
+schedule function movable_builds:info/check_ppl_id 600

@@ -17,7 +17,8 @@ The first step is to build something that you want to convert into a movable bui
 To scan your build you should execute the function movable_builds:scan/init_scan at a location in your build.
 This location will be the center of your build and as such the axis of all rotations.
 To help you with scanning you can run the function movable_builds:scan/help to provide a scan funtion or give you a scan-tool.
-
+There are two other tools. The Hinge tool let's you mark a block before scanning. During the scan, from that block on, everything will belong to a seperate structure/build, which can move independent, but still remains attached to the root build.
+The third tool is an Ignore Once tool. When scanning a block marked with this tool will be ignored the first time the scan process runs into it. (Can be applied multiple times).
 3. Moving
 From the in-game move help section you can get a tool that helps you place your latest scanned build wherever you want.
 This is only intended for getting a structure to it's initial location. It will only move the latest scan.

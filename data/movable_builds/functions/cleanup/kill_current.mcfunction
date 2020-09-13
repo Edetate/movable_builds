@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=edta_movable_build] if score @s mb_build_id = $current_id mb_build_id run kill @s

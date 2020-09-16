@@ -8,6 +8,13 @@
 	{ "predicate": { "custom_model_data": 5420101}, "model": "item/minecart"},
       { "predicate": { "custom_model_data": 5420102}, "model": "item/birch_fence_gate"},
       { "predicate": { "custom_model_data": 5420103}, "model": "item/barrier"},
-      { "predicate": { "custom_model_data": 5420104}, "model": "item/writable_book"}
+      { "predicate": { "custom_model_data": 5420104}, "model": "item/writable_book"},
+      { "predicate": { "custom_model_data": 5420110}, "model": "custom/moving/clockwise"},
+      { "predicate": { "custom_model_data": 5420111}, "model": "custom/moving/counter_clockwise"},
+      { "predicate": { "custom_model_data": 5420112}, "model": "custom/moving/up"},
+      { "predicate": { "custom_model_data": 5420113}, "model": "custom/moving/down"},
+      { "predicate": { "custom_model_data": 5420114}, "model": "custom/moving/up_360"},
+      { "predicate": { "custom_model_data": 5420115}, "model": "custom/moving/down_360"}
+
 	]
 }

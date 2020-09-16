@@ -12,7 +12,11 @@ scoreboard objectives add mb_timer dummy
 scoreboard objectives add scan_limit dummy
 scoreboard objectives add mb_layer dummy
 scoreboard objectives add mb_use_type dummy
+scoreboard objectives add mb_move_type dummy
 scoreboard objectives add mb_use_item minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add mb_drop_coas minecraft.dropped:minecraft.carrot_on_a_stick
+
+scoreboard objectives add edta_mb_sneak minecraft.custom:minecraft.sneak_time
 
 tellraw @a [{"text":"EDTA's Movable Builds datapack loaded. v1.3","color":"aqua"}]
 execute as @a run function movable_builds:help

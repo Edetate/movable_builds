@@ -7,3 +7,5 @@ execute if score @s mb_use_type matches 3 anchored eyes run function movable_bui
 execute if score @s mb_use_type matches 4 anchored eyes run function movable_builds:tools/ignore
 execute if score @s mb_use_type matches 5 anchored eyes run function movable_builds:tools/info
 execute if score @s mb_use_type matches 6 run function movable_builds:tools/move/rotate
+execute if score @s mb_use_type matches 7 run function movable_builds:tools/move/rel_move
+execute if score @s mb_use_type matches 8 run function movable_builds:tools/move/abs_move

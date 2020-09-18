@@ -1,0 +1,1 @@
+give @s minecraft:carrot_on_a_stick{display:{Name:"{\"text\":\"Separator tool\"}",Lore:["\"Right click to start (or stop).\"","\"Shift right click to confirm\"","\"Scanning will not go through a separator.\""]},Unbreakable:1,mb-use-type:9,CustomModelData:5420103,Enchantments:[{id:mending,lvl:1}]} 1

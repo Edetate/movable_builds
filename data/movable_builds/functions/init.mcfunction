@@ -13,6 +13,7 @@ scoreboard objectives add scan_limit dummy
 scoreboard objectives add mb_layer dummy
 scoreboard objectives add mb_use_type dummy
 scoreboard objectives add mb_move_type dummy
+scoreboard objectives add mb_number dummy
 scoreboard objectives add mb_use_item minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add mb_drop_coas minecraft.dropped:minecraft.carrot_on_a_stick
 
@@ -31,6 +32,8 @@ team add edta_mb_hinges
 team modify edta_mb_hinges color blue
 team add edta_mb_ignores
 team modify edta_mb_ignores color red
+team add edta_mb_separat
+team modify edta_mb_separat color red
 team add edta_mb_center
 team modify edta_mb_center color green
 

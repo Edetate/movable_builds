@@ -1,21 +1,56 @@
 {
-    "parent": "minecraft:item/generated",
-    "textures": {
-        "layer0": "minecraft:item/glistering_melon_slice"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/glistering_melon_slice"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 5420101
+      },
+      "model": "custom/red_outline"
     },
-    "overrides": [
-        {
-            "predicate": {
-                "custom_model_data": 5420101
-            },
-            "model": "custom/red_outline"
-        },
-      {
-        "predicate": {
-          "custom_model_data": 5420102
-        },
-        "model": "custom/blue_outline"
-      }
-    ]
-
+    {
+      "predicate": {
+        "custom_model_data": 5420102
+      },
+      "model": "custom/blue_outline"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5420103
+      },
+      "model": "custom/orange_outline_xpos"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5420104
+      },
+      "model": "custom/orange_outline_xneg"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5420105
+      },
+      "model": "custom/orange_outline_ypos"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5420106
+      },
+      "model": "custom/orange_outline_yneg"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5420107
+      },
+      "model": "custom/orange_outline_zpos"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5420108
+      },
+      "model": "custom/orange_outline_zneg"
+    }
+  ]
 }

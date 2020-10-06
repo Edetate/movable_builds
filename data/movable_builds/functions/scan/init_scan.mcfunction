@@ -1,4 +1,4 @@
-scoreboard players set $blocks_scanned scan_limit 0
+scoreboard players set $blocks_scanned mb_scan_limit 0
 scoreboard players add $id_pool mb_build_id 1
 scoreboard players operation @s mb_build_id = $id_pool mb_build_id
 scoreboard players operation $root_id mb_build_id = $id_pool mb_build_id
@@ -20,3 +20,5 @@ scoreboard players operation $current_id mb_build_id = $root_id mb_build_id
 
 execute if score $id_pool mb_build_id = $root_id mb_build_id run tellraw @s [{"text":"Scan complete. ID is ","color":"aqua"},{"score":{"name":"$root_id","objective":"mb_build_id"},"color":"aqua"},{"text":"\n[Show demo]","color":"blue","underlined":true,"clickEvent":{"action":"run_command","value":"/execute as @e[type=armor_stand,tag=edta_movable_build,tag=center] if score @s mb_build_id = $id_pool mb_build_id at @s run function movable_builds:move/demo"}},{"text":"\n[Help > Moving]","color":"dark_aqua","underlined":true,"clickEvent":{"action":"run_command","value":"/function movable_builds:move/help"}},{"text":"\n[Kill last build]","color":"blue","underlined":true,"clickEvent":{"action":"run_command","value":"/function movable_builds:cleanup/kill_current"}}]
 execute unless score $id_pool mb_build_id = $root_id mb_build_id run tellraw @s [{"text":"Scan complete. IDs are ","color":"aqua"},{"score":{"name":"$root_id","objective":"mb_build_id"},"color":"aqua"},{"text":"-","color":"aqua"},{"score":{"name":"$id_pool","objective":"mb_build_id"},"color":"aqua"},{"text":"\n[Show demo]","color":"blue","underlined":true,"clickEvent":{"action":"run_command","value":"/execute as @e[type=armor_stand,tag=edta_movable_build,tag=center] if score @s mb_build_id = $id_pool mb_build_id at @s run function movable_builds:move/demo"}},{"text":"\n[Help > Moving]","color":"dark_aqua","underlined":true,"clickEvent":{"action":"run_command","value":"/function movable_builds:move/help"}},{"text":"\n[Kill last build]","color":"blue","underlined":true,"clickEvent":{"action":"run_command","value":"/function movable_builds:cleanup/kill_current"}}]
+
+function movable_builds:cleanup/kill_my_markers

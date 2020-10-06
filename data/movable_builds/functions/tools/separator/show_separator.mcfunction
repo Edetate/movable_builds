@@ -24,5 +24,4 @@ execute if score $x_sq mb_number > $y_sq mb_number if score $x_sq mb_number > $z
 execute if score $y_sq mb_number > $x_sq mb_number if score $y_sq mb_number > $z_sq mb_number run function movable_builds:tools/separator/separator_y
 execute if score $z_sq mb_number > $x_sq mb_number if score $z_sq mb_number > $y_sq mb_number run function movable_builds:tools/separator/separator_z
 
-scoreboard players operation $current_ppl_id edta_mb_ppl_id = @s edta_mb_ppl_id
 execute as @e[type=minecraft:armor_stand, tag=edta_movable_build, tag=edta_mb_separator, tag= edta_mb_todo] run function movable_builds:tools/separator/set_separat_props

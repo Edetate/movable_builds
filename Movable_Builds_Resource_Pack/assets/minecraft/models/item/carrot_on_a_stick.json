@@ -10,6 +10,7 @@
       { "predicate": { "custom_model_data": 5420103}, "model": "item/barrier"},
       { "predicate": { "custom_model_data": 5420104}, "model": "item/writable_book"},
       { "predicate": { "custom_model_data": 5420105}, "model": "item/shears"},
+      { "predicate": { "custom_model_data": 5420106}, "model": "item/crafting_table"},
       { "predicate": { "custom_model_data": 5420110}, "model": "custom/moving/clockwise"},
       { "predicate": { "custom_model_data": 5420111}, "model": "custom/moving/counter_clockwise"},
       { "predicate": { "custom_model_data": 5420112}, "model": "custom/moving/rotate_up"},

@@ -19,10 +19,37 @@ This location will be the center of your build and as such the axis of all rotat
 To help you with scanning you can run the function movable_builds:scan/help to provide a scan funtion or give you a scan-tool.
 There are two other tools. The Hinge tool let's you mark a block before scanning. During the scan, from that block on, everything will belong to a seperate structure/build, which can move independent, but still remains attached to the root build.
 The third tool is an Ignore Once tool. When scanning a block marked with this tool will be ignored the first time the scan process runs into it. (Can be applied multiple times).
+
 3. Moving
 From the in-game move help section you can get a tool that helps you place your latest scanned build wherever you want.
 This is only intended for getting a structure to it's initial location. It will only move the latest scan.
 It will reset all rotations. After that you can animate this scan as follows:
+* Use the movement tools given to you after a scan
+OR
+* Use commands in a more flexible and more manual approach
+
+3.1 Movement Tools
+There are 3 types of movement tools
+* Relative movements such as 'forward' or 'left'
+* Absolute movements such as "towards positive x"
+* Rotations (Note: the 360 rotations, use tricks to be able to rotate past the 90° up or down rotation, but miht behave weirdly in conjunction with other movements)
+
+Each tool also has different modes. Simply drop the tool to switch mode. Use SNEAK+DROP to actualy drop the tool.
+When right-clicking a tool you can try it out, but it will not be a fluent movement (only every 4 ticks).
+
+The best way to use these tools is by putting them in a chest on top of a specific command block which you can get through the ingame help menu
+or running the function '/function movable_builds:tools/get_command_block';
+In essence you just need a command block that runs the '/function movable_builds:command_block/read_moves' command.
+You can configure the command block to your needs (impulse/repeat/chain, whether or not to require redstone). This system is best controlled by redstone.
+
+Whenever the command block is triggered, all movement tools that are present in the chest on top of it, will be triggered, and your build will move.
+
+Since, using this system, you will often need the same tool multiple times, there is a way to duplicate them.
+Get the duplicator tool from the ingame help menu or use the function '/function movable_builds:tools/get_duplicator_tool'
+
+Simply put the duplicator tool in your off hand and SNEAK+DROP any tool, to duplicate it.
+
+3.2 Movement through commands
 To move your build, you need to:
 A. tp the center
 B. run the function movable_builds:update/update_position at the center

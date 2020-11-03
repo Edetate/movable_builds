@@ -20,7 +20,7 @@ scoreboard objectives add mb_drop_coas minecraft.dropped:minecraft.carrot_on_a_s
 
 scoreboard objectives add edta_mb_sneak minecraft.custom:minecraft.sneak_time
 
-tellraw @a [{"text":"EDTA's Movable Builds datapack loaded. v1.3","color":"aqua"}]
+tellraw @a [{"text":"EDTA's Movable Builds datapack loaded. v1.4","color":"aqua"}]
 execute as @a run function movable_builds:help
 
 #set the maximum amount of blocks in a build below. 200 still works fluently on my computer for 1 build, but more becomes choppy

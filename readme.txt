@@ -17,8 +17,10 @@ The first step is to build something that you want to convert into a movable bui
 To scan your build you should execute the function movable_builds:scan/init_scan at a location in your build.
 This location will be the center of your build and as such the axis of all rotations.
 To help you with scanning you can run the function movable_builds:scan/help to provide a scan funtion or give you a scan-tool.
-There are two other tools. The Hinge tool let's you mark a block before scanning. During the scan, from that block on, everything will belong to a seperate structure/build, which can move independent, but still remains attached to the root build.
-The third tool is an Ignore Once tool. When scanning a block marked with this tool will be ignored the first time the scan process runs into it. (Can be applied multiple times).
+There are three other tools. The Hinge tool let's you mark a block before scanning. During the scan, from that block on, everything will belong to a seperate structure/build, which can move independent, but still remains attached to the root build.
+The third tool is an Ignore tool. When scanning a block marked with this tool will be ignored when the scan-process runs into it.
+The last tool that fits in this categroy is the separator tool: You can mark the edge between 2 blocks as a separator: scans will not go through there.
+This is mostly useful if you want to create a sub-build that can rotate independantly using the hing marker and you want some control over which blocks belong to which part.
 
 3. Moving
 From the in-game move help section you can get a tool that helps you place your latest scanned build wherever you want.
@@ -76,6 +78,6 @@ Note that builds in unloaded chuncks can not be removed.
  as such comes with limitations: you can only rotate 90 in each direction (up/down). I managed to trick it in the rotate_up_360 / rotate_down_360 function.
 * Blocks are rendered differently in armorstands. For one they are smaller. Slabs are always bottom, stairs always face north, ...
 Use the Movable Builds Resource Pack to make stairs, slabs, observers, dispensers, droppers and furnaces face correctly.
-* No collision. You can simply walk/fall through. The best solution I have for this is invisible slime passengers with no AI (you still fall through, but you might
+* No collision. You can simply walk/fall through. The best solution I have for this is invisible shulker passengers with no AI (you still fall through, but you might
  have a hard time walking through and can get pushed. Note that is also possible to program in effects like damage when you walk into a build representing someting deadly.
  I did experiment with collision in the add_colision function, but it's not working well.

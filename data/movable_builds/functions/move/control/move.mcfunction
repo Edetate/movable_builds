@@ -1,3 +1,1 @@
-execute if score $current_use_type mb_use_type matches 6 run function movable_builds:move/control/rotate
-execute if score $current_use_type mb_use_type matches 7 run function movable_builds:move/control/rel_move
-execute if score $current_use_type mb_use_type matches 8 run function movable_builds:move/control/abs_move
+execute as @e[type=armor_stand,tag=edta_movable_build,tag=center] if score @s mb_build_id = $cur_build_id mb_build_id at @s run function movable_builds:move/control/do_move

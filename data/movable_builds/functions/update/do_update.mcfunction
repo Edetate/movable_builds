@@ -6,5 +6,7 @@ execute if score @s mb_build_side matches 4 run tp ^ ^ ^-.6
 execute if score @s mb_build_side matches 5 run tp ^ ^.6 ^
 execute if score @s mb_build_side matches 6 run tp ^ ^-.6 ^
 
-execute as @s[tag=edta_mb_hinge] run function movable_builds:update/hinge_rotation
-function movable_builds:update/update_next
+execute as @s[tag=!edta_mb_hinge] store result entity @s Rotation[1] float 0.0001 run scoreboard players get $current_rotation mb_ver_rot
+
+execute as @s[tag=edta_mb_hinge] run function movable_builds:update/hinge_update
+execute as @s[tag=!edta_mb_hinge] run function movable_builds:update/update_next

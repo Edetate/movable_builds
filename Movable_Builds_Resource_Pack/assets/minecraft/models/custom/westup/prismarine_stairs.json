@@ -1,8 +1,0 @@
-{
-    "parent": "custom/westup/stairs",
-    "textures": {
-        "bottom": "block/prismarine",
-        "top": "block/prismarine",
-        "side": "block/prismarine"
-    }
-}

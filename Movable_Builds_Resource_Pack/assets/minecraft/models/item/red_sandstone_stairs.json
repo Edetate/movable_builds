@@ -1,4 +1,0 @@
-{
-    "parent": "block/red_sandstone_stairs",
-     "overrides": [
- 	{ "predicate": { "custom_model_data": 5420101}, "model": "custom/east/red_sandstone_stairs"}, 	{ "predicate": { "custom_model_data": 5420102}, "model": "custom/south/red_sandstone_stairs"}, 	{ "predicate": { "custom_model_data": 5420103}, "model": "custom/west/red_sandstone_stairs"}, 	{ "predicate": { "custom_model_data": 5420104}, "model": "custom/northup/red_sandstone_stairs"},     { "predicate": { "custom_model_data": 5420105}, "model": "custom/eastup/red_sandstone_stairs"},     { "predicate": { "custom_model_data": 5420106}, "model": "custom/southup/red_sandstone_stairs"},     { "predicate": { "custom_model_data": 5420107}, "model": "custom/westup/red_sandstone_stairs"} 	]}

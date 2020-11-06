@@ -1,4 +1,0 @@
-{
-    "parent": "block/birch_stairs",
-     "overrides": [
- 	{ "predicate": { "custom_model_data": 5420101}, "model": "custom/east/birch_stairs"}, 	{ "predicate": { "custom_model_data": 5420102}, "model": "custom/south/birch_stairs"}, 	{ "predicate": { "custom_model_data": 5420103}, "model": "custom/west/birch_stairs"}, 	{ "predicate": { "custom_model_data": 5420104}, "model": "custom/northup/birch_stairs"},     { "predicate": { "custom_model_data": 5420105}, "model": "custom/eastup/birch_stairs"},     { "predicate": { "custom_model_data": 5420106}, "model": "custom/southup/birch_stairs"},     { "predicate": { "custom_model_data": 5420107}, "model": "custom/westup/birch_stairs"} 	]}

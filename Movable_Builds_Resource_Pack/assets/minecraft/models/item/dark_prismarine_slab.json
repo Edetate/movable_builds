@@ -1,3 +1,0 @@
-{
-    "parent": "block/dark_prismarine_slab",   "overrides": [     {       "predicate": {         "custom_model_data": 5420101       },       "model": "block/dark_prismarine_slab_top"     },     {       "predicate": {         "custom_model_data": 5420102       },       "model": "block/dark_prismarine"     }   ]
-}

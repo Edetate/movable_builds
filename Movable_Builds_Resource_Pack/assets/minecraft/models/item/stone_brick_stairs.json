@@ -1,4 +1,0 @@
-{
-    "parent": "block/stone_brick_stairs",
-     "overrides": [
- 	{ "predicate": { "custom_model_data": 5420101}, "model": "custom/east/stone_brick_stairs"}, 	{ "predicate": { "custom_model_data": 5420102}, "model": "custom/south/stone_brick_stairs"}, 	{ "predicate": { "custom_model_data": 5420103}, "model": "custom/west/stone_brick_stairs"}, 	{ "predicate": { "custom_model_data": 5420104}, "model": "custom/northup/stone_brick_stairs"},     { "predicate": { "custom_model_data": 5420105}, "model": "custom/eastup/stone_brick_stairs"},     { "predicate": { "custom_model_data": 5420106}, "model": "custom/southup/stone_brick_stairs"},     { "predicate": { "custom_model_data": 5420107}, "model": "custom/westup/stone_brick_stairs"} 	]}

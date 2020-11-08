@@ -26,7 +26,7 @@ scoreboard objectives add edta_mb_sneak minecraft.custom:minecraft.sneak_time
 tellraw @a [{"text":"EDTA's Movable Builds datapack loaded. v1.5","color":"aqua"}]
 execute as @a run function movable_builds:help
 
-#set the maximum amount of blocks in a build below. 200 still works fluently on my computer for 1 build, but more becomes choppy
+#set the maximum amount of blocks in a build below. 500 still works fluently on my computer for 1 build, but more becomes choppy
 scoreboard players set $MAX_NUMBER_OF_BLOCKS_SCANNED mb_scan_limit 500
 
 #maxCommandChainLength should be at least $MAX_NUMBER_OF_BLOCKS_SCANNED * 50

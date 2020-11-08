@@ -1,3 +1,3 @@
-scoreboard players set $rotation_increment mb_ver_rot 100000
+scoreboard players set $rotation_increment mb_ver_rot 10000000
 function movable_builds:move/set_rotation
 function movable_builds:update/update_position_untilt

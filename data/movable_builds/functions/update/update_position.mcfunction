@@ -1,4 +1,4 @@
-execute store result entity @s Rotation[1] float 0.0001 run scoreboard players get $current_rotation mb_ver_rot
+execute store result entity @s Rotation[1] float 0.000001 run scoreboard players get $current_rotation mb_ver_rot
 execute as @s[tag=edta_mb_hinge] run function movable_builds:update/remember_hinge_rotation
 
 function movable_builds:update/remember_current_head_rotation

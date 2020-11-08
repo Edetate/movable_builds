@@ -1,2 +1,5 @@
-tellraw @s {"text":"\nBuilding rules:\n* Limit yourself to the maximum number of blocks as defined in the init.mcfunction file (default 200). If you connect to the ground you'll go above.\n* Use String / tripwire to connect blocks diagonally (will be invisible)\n","color":"aqua"}
+tellraw @s {"text":"\nBuilding rules:","color":"aqua"}
+tellraw @s {"text":"* Do not attach to the ground. Make your build floating.","color":"aqua"}
+tellraw @s {"text":"* Default max amount of blocks is 500. Can be modified in options.","color":"aqua"}
+tellraw @s {"text":"* String / tripwire will become invisible.","color":"aqua"}
 function movable_builds:extras/no_command_fb

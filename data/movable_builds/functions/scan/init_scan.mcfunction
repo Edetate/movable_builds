@@ -6,11 +6,12 @@ scoreboard players operation $current_id mb_build_id = $id_pool mb_build_id
 scoreboard players reset $parent_id mb_part_id
 scoreboard players set $current_layer mb_layer 0
 
-summon minecraft:armor_stand ~ ~ ~ {Marker:1b,NoGravity:1,Invulnerable:1b,Tags:[edta_movable_build,edta_mb_part,center,next_to_scan],Invisible:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.01f,0.01f,0.01f]},DisabledSlots:2039583}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,NoGravity:1,Invulnerable:1b,Tags:[edta_movable_build,edta_mb_part,center,next_to_scan],Invisible:1b,ArmorItems:[{},{},{},{}],Pose:{Head:[0.01f,0.01f,0.01f]},DisabledSlots:2039583,Passengers:[{id:"minecraft:area_effect_cloud",Duration:99999,Passengers:[{id:"minecraft:area_effect_cloud",Duration:99999,Passengers:[{id:"minecraft:shulker",NoAI:1b,Silent:1b,NoGravity:1b,Invulnerable:1b,ActiveEffects:[{Id:14,Amplifier:1,Duration:1000000,ShowParticles:0b}],Tags:["shulker"],DeathLootTable:"empty"}]}]}]}
 execute as @e[type=armor_stand,tag=edta_movable_build,tag=center,tag=!idgiven,limit=1] at @s run function movable_builds:scan/set_properties
 function movable_builds:scan/scan_manager
 
 scoreboard players set $current_rotation mb_ver_rot 0
+execute as @e[type=armor_stand,tag=edta_movable_build,tag=center] if score @s mb_build_id = $root_id mb_build_id at @s run tp @s ~ ~-1 ~
 execute as @e[type=armor_stand,tag=edta_movable_build,tag=center] if score @s mb_build_id = $root_id mb_build_id at @s run function movable_builds:update/update_position
 
 scoreboard players operation $current_id mb_build_id = $root_id mb_build_id

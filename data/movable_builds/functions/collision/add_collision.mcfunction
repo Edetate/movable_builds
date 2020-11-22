@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=edta_movable_build,tag=mb_hides_shulker,tag=!mb_shulker_collision] if score @s mb_build_id = $current_id mb_build_id at @s run function movable_builds:collision/do_add_collision

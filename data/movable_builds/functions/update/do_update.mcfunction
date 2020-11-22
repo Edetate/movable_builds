@@ -5,6 +5,7 @@ execute if score @s mb_build_side matches 3 run tp ^ ^ ^.6
 execute if score @s mb_build_side matches 4 run tp ^ ^ ^-.6
 execute if score @s mb_build_side matches 5 run tp ^ ^.6 ^
 execute if score @s mb_build_side matches 6 run tp ^ ^-.6 ^
+execute if score @s mb_build_side matches 7 run tp ^ ^-1 ^
 
 execute as @s[tag=!edta_mb_hinge] store result entity @s Rotation[1] float 0.000001 run scoreboard players get $current_rotation mb_ver_rot
 

@@ -1,8 +1,18 @@
 
-tellraw @s [{"text":"   >> MOVABLE BUILD OPTIONS <<","color":"dark_green"}]
-tellraw @s [{"text":" * [Set max blocks scanned]","color":"dark_grey","bold":true,"clickEvent":{"action":"suggest_command","value":"/scoreboard players set $MAX_NUMBER_OF_BLOCKS_ANIMATED rt_scan_limit 200"}}]
+tellraw @s [{"text":"   >> MOVABLE BUILD OPTIONS <<\n","color":"aqua"}]
 
-execute if score $100%_BLOCK_SIZE mb_boolean matches 2 run tellraw @s [{"text":" * Movable builds are 60% of block size. Click to make 100%.","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function movable_builds:options/turn_full_size_on"}}]
-execute unless score $100%_BLOCK_SIZE mb_boolean matches 2 run tellraw @s [{"text":" * Movable builds are 100% of block size. Click to make 60%.","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/function movable_builds:options/turn_full_size_off"}}]
+
+execute if score $100%_BLOCK_SIZE mb_boolean matches 2 run tellraw @s [{"text":" * Block size: ","color":"aqua"}, {"text":"[ 100% ] ","color":"red","clickEvent":{"action":"run_command","value":"/function movable_builds:options/turn_full_size_on"}},{"text":" [ 60% ]","color":"green","bold":true}, {"text":"     [?]","color":"aqua", "hoverEvent": {"action": "show_text","contents":"100% means a 'movable build' has the same size as it is build in minecraft.\n60% is the size of a head, and since movable builds are armorstands this is more 'natural'.\n\nWarning: each option here requires using the matching resource pack."}}]
+execute unless score $100%_BLOCK_SIZE mb_boolean matches 2 run tellraw @s [{"text":" * Block size: ","color":"aqua"}, {"text":"[ 100% ] ","color":"green","bold":true},{"text":" [ 60% ]","color":"red","clickEvent":{"action":"run_command","value":"/function movable_builds:options/turn_full_size_off"}}, {"text":"     [?]","color":"aqua", "hoverEvent": {"action": "show_text","contents":"100% means a 'movable build' has the same size as it is build in minecraft.\n60% is the size of a head, and since movable builds are armorstands this is more 'natural'.\n\nWarning: each option here requires using the matching resource pack."}}]
+
+
+tellraw @s [{"text":" * Shulker collision:            [?]","color":"aqua", "hoverEvent": {"action": "show_text","contents":"Shulker collision will put a shulker in all blocks that are large enough to hide it's head.\nDue to a bug in minecraft it is currently not possible to completely hide shulkers in all blocks.\n\nWill line up very well when using 100% block size."}}]
+
+execute unless score $shulker_collison_mode edta_mb_enum matches 2.. run tellraw @s [{"text":"          "},{"text":"[ Always on ]","color":"red","clickEvent":{"action":"run_command","value":"/function movable_builds:options/turn_shulker_collision_on"}},{"text":"   "},{"text":"[ Manual ]","color":"green","bold":true}, {"text":"   "},{"text":"[ Always off ]","color":"red","clickEvent":{"action":"run_command","value":"/function movable_builds:options/turn_shulker_collision_off"}}]
+execute if score $shulker_collison_mode edta_mb_enum matches 2 run tellraw @s [{"text":"          "},{"text":"[ Always on ]","color":"green","bold":true},{"text":"   "},{"text":"[ Manual ]","color":"red","clickEvent":{"action":"run_command","value":"/function movable_builds:options/turn_shulker_collision_manual"}}, {"text":"   "},{"text":"[ Always off ]","color":"red","clickEvent":{"action":"run_command","value":"/function movable_builds:options/turn_shulker_collision_off"}}]
+execute if score $shulker_collison_mode edta_mb_enum matches 3 run tellraw @s [{"text":"          "},{"text":"[ Always on ]","color":"red","clickEvent":{"action":"run_command","value":"/function movable_builds:options/turn_shulker_collision_on"}},{"text":"   "},{"text":"[ Manual ]","color":"red","clickEvent":{"action":"run_command","value":"/function movable_builds:options/turn_shulker_collision_manual"}}, {"text":"   "},{"text":"[ Always off ]","color":"green","bold":true}]
+
+
+tellraw @s [{"text":" * [Set max blocks scanned]","color":"dark_grey","bold":true,"clickEvent":{"action":"suggest_command","value":"/scoreboard players set $MAX_NUMBER_OF_BLOCKS_SCANNED rt_scan_limit 500"}}]
 
 function movable_builds:extras/no_command_fb

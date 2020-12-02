@@ -1,2 +1,2 @@
-tp @s ~ ~-.3 ~
+tp @s ~ ~-.25 ~
 function movable_builds:update/update_position

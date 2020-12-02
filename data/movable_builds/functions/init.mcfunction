@@ -5,6 +5,7 @@ scoreboard objectives add mb_build_id dummy
 scoreboard objectives add mb_cur_build_id dummy
 scoreboard objectives add edta_mb_root_id dummy
 scoreboard objectives add edta_mb_ppl_id dummy
+scoreboard objectives add edta_mb_enum dummy
 scoreboard objectives add mb_previous_id dummy
 scoreboard objectives add mb_prev_layer dummy
 scoreboard objectives add mb_boolean dummy
